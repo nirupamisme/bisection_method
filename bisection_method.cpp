@@ -26,6 +26,10 @@ int main() {
     cout << "Enter the second guess : ";
     cin >> x1;
 
+    if (y(x0) == y(x2)) {
+        cout << "The guesses are not valid" << endl;
+        return 0;
+    }
     if ((y(x0) < 0 && y(x1) < 0) || (y(x0) > 0 && y(x1) > 0)) {
         cout << "The guesses are not valid" << endl;
         return 0;
