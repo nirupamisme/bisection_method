@@ -26,7 +26,23 @@ int main() {
     cout << "Enter the second guess : ";
     cin >> x1;
 
-    if (y(x0) == y(x2)) {
+    if (y(x0) == 0) {
+        cout << "\nThe root for the function is : " << x0 << endl;
+        if (y(x1) == 0) {
+            cout << "\nThe root for the function is : " << x1 << endl;
+            return 0;
+        }
+        return 0;
+    }
+    if (y(x1) == 0) {
+        cout << "\nThe root for the function is : " << x1 << endl;
+        if (y(x0) == 0) {
+            cout << "\nThe root for the function is : " << x0 << endl;
+            return 0;    
+        }
+        return 0;
+    }
+    if (y(x0) == y(x1)) {
         cout << "The guesses are not valid" << endl;
         return 0;
     }
